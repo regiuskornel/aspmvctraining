@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace SampleMVC.Controllers
 {
-    [Route("[area]/[controller]/[action]")]
+    [Route("[controller]/[action]")]
     public class ProductsController : Controller
     {
         [HttpGet] // Matches '/Products/List'

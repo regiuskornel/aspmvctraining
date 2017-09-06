@@ -21,7 +21,8 @@ namespace SampleMVC.Controllers
     public class FormatterInputModel
     {
         public int CurrentClassId { get; set; }
-        public Guid PartnerId { get; set; }
+
+        public Guid? PartnerId { get; set; }
     }
 
 
