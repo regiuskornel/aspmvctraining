@@ -34,7 +34,7 @@ namespace SampleMVC
                 app.UseDeveloperExceptionPage();
             }
 
-            //app.UseMvc();
+            //default: app.UseMvc();
             
             app.UseMvc(routes =>
             {
