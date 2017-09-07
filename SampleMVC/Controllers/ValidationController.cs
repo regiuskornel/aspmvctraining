@@ -33,7 +33,6 @@ namespace SampleMVC.Controllers
             var model = await ValidationMaxModel.GetModell(id);
             inputModel.LastPurchaseDate = model.LastPurchaseDate;
 
-            //Exception-t generáló változat: this.ValidateModel(inputModel);
             if (this.TryValidateModel(inputModel))
             {
                 return Ok(model);
@@ -51,9 +50,6 @@ namespace SampleMVC.Controllers
         [HttpPost("V2/{id}")]
         public ObjectResult ModelStateTestPost2([Required] int id, [FromBody] ValidationMaxRelativeModel inputModel)
         {
-            //var model = await ValidationMaxRelativeModel.GetModell(id);
-            //inputModel.LastPurchaseDate = model.LastPurchaseDate;
-
             if (this.TryValidateModel(inputModel))
             {
                 return Ok(inputModel);

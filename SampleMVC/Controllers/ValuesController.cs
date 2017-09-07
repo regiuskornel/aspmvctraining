@@ -3,9 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using SampleMVC.Infrastucture;
 
 namespace SampleMVC.Controllers
 {
+    [HttpHeader("Author","Logmein")]
+
     [Route("api/[controller]")]
     public class ValuesController : Controller
     {
