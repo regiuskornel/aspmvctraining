@@ -4,18 +4,27 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using SampleMVC.Infrastucture;
+using SampleMVC.Services;
 
 namespace SampleMVC.Controllers
 {
-    [HttpHeader("Author","Logmein")]
-
+    [HttpHeader("Author","Logmein")] //Custom filter
     [Route("api/[controller]")]
     public class ValuesController : Controller
     {
+        private readonly IMyCustomService _custom;
+
+        public ValuesController(IMyCustomService custom)
+        {
+            _custom = custom;
+        }
+
         // GET api/values
         [HttpGet]
         public IEnumerable<string> Get()
         {
+            _custom.DoSomething(); //Call injected service
+
             return new string[] { this.Request.QueryString.ToString(), "value2" };
         }
 

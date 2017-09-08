@@ -5782,17 +5782,17 @@
       ]
     },
     "Microsoft.CodeAnalysis.Analyzers/1.1.0": {
-      "sha512": "HS3iRWZKcUw/8eZ/08GXKY2Bn7xNzQPzf8gRPHGSowX7u7XXu9i9YEaBeBNKUXWfI7qjvT2zXtLUvbN0hds8vg==",
+      "sha512": "qq6AZ5oqR4EncpK028QMgiXMtuXbS4ES7x1At/23neyADsdk94fSADLXD8Tm44qgkF3fxM+qwJoSfNDv2wuwOA==",
       "type": "package",
       "path": "microsoft.codeanalysis.analyzers/1.1.0",
       "files": [
+        "Microsoft.CodeAnalysis.Analyzers.1.1.0.nupkg.sha512",
+        "Microsoft.CodeAnalysis.Analyzers.nuspec",
         "ThirdPartyNotices.rtf",
         "analyzers/dotnet/cs/Microsoft.CodeAnalysis.Analyzers.dll",
         "analyzers/dotnet/cs/Microsoft.CodeAnalysis.CSharp.Analyzers.dll",
         "analyzers/dotnet/vb/Microsoft.CodeAnalysis.Analyzers.dll",
         "analyzers/dotnet/vb/Microsoft.CodeAnalysis.VisualBasic.Analyzers.dll",
-        "microsoft.codeanalysis.analyzers.1.1.0.nupkg.sha512",
-        "microsoft.codeanalysis.analyzers.nuspec",
         "tools/install.ps1",
         "tools/uninstall.ps1"
       ]
@@ -5897,7 +5897,7 @@
       ]
     },
     "Microsoft.Data.Edm/5.8.2": {
-      "sha512": "uWSMpBOXimv1BPyV+ulLEO+ABpszKGb0ZrbFgmOMyewoqwBmE9BF4ks57sTzB5oxsYCcesEDxWLtg+XNh8zi7w==",
+      "sha512": "EwlGs274PAQe1YDlRqfTHNo98qTl+/Ch9lSWb0ONXrF8dI+q8GZDVA/IpDxBWn4T4Xi88rVW1MHau66ed2VcbQ==",
       "type": "package",
       "path": "microsoft.data.edm/5.8.2",
       "files": [
@@ -5961,7 +5961,7 @@
       ]
     },
     "Microsoft.Data.OData/5.8.2": {
-      "sha512": "j7gKrt89PQampiCySNsCf/VFCv7J3VcHnx+pt1ZDUpmZFEv1qkEGZNhBMhvPTmW+mmJUmAhb3Zbkc5B2v2dEOg==",
+      "sha512": "eVX5BDf6jYtZkydnl2meDL2IHy0iZpdFNrpglL7pa/3yHsvzC6zH2DByeszy8hSkEI9reXkVRXKrKOHt9T+Q0Q==",
       "type": "package",
       "path": "microsoft.data.odata/5.8.2",
       "files": [
@@ -7521,10 +7521,12 @@
       ]
     },
     "Newtonsoft.Json/10.0.1": {
-      "sha512": "1dPidmSB4N1l1TpAr7p/TKPgPVMuF6KR5Xyu2qIDb6imyvJvqNdrh7d+Hl8txR8X6ONg8VgTjTBQufRdHkk/GA==",
+      "sha512": "ebWzW9j2nwxQeBo59As2TYn7nYr9BHicqqCwHOD1Vdo+50HBtLPuqdiCYJcLdTRknpYis/DSEOQz5KmZxwrIAg==",
       "type": "package",
       "path": "newtonsoft.json/10.0.1",
       "files": [
+        "Newtonsoft.Json.10.0.1.nupkg.sha512",
+        "Newtonsoft.Json.nuspec",
         "lib/net20/Newtonsoft.Json.dll",
         "lib/net20/Newtonsoft.Json.xml",
         "lib/net35/Newtonsoft.Json.dll",
@@ -7539,13 +7541,11 @@
         "lib/netstandard1.3/Newtonsoft.Json.xml",
         "lib/portable-net45+win8+wpa81+wp8/Newtonsoft.Json.dll",
         "lib/portable-net45+win8+wpa81+wp8/Newtonsoft.Json.xml",
-        "newtonsoft.json.10.0.1.nupkg.sha512",
-        "newtonsoft.json.nuspec",
         "tools/install.ps1"
       ]
     },
     "Newtonsoft.Json.Bson/1.0.1": {
-      "sha512": "gM+JFOGSkGz2zXj4upbT4RikMdq7Bfue27GcdlmUq7h992Wqdj7PFrDpUKeo6VISM2Rh8C2HWzA8U9iDdn8IpQ==",
+      "sha512": "8bIDII2L+4tne18jU8r7xdUFrmHv9fxWKgw0vUogNtn2kvpt3l7Q4eI5iWcSRhMhPcOj3yVit2K9Kd8ygxjaNw==",
       "type": "package",
       "path": "newtonsoft.json.bson/1.0.1",
       "files": [
@@ -8758,7 +8758,7 @@
       ]
     },
     "System.Diagnostics.FileVersionInfo/4.3.0": {
-      "sha512": "TxU9Poet8libv4yx9DTkPKuzk5dtQkw02tE6Z8x5Ta3gAokvkV0tqbdEdylwv//+R1qeKfHnzvdj7c+5XZOkIA==",
+      "sha512": "IZK9UnZl9wHc+xET0TBAYCmVQx9S4WYLAzlc9QPOaq1iablDcjvgkdfY8Owc2Oz4GD4Yhzi83/22T4lW2nWIqw==",
       "type": "package",
       "path": "system.diagnostics.fileversioninfo/4.3.0",
       "files": [
@@ -9204,7 +9204,7 @@
       ]
     },
     "System.Interactive.Async/3.1.1": {
-      "sha512": "pt0yZqfuQ200bkEWrP00yrfREEaqi1H/xiAUbfwiwR2gW+RsYeaT7v2R8iir3XGYGlCvOTfV6yDIM81dihbX4w==",
+      "sha512": "evo+mj94duwvnhYknuqb4xYnl7EJOnbcKoBvwgn0Gl/a5dju7UcMxFdr2zLYakskJUKXMwiqzchkAMueiImE+w==",
       "type": "package",
       "path": "system.interactive.async/3.1.1",
       "files": [
@@ -9594,10 +9594,12 @@
       ]
     },
     "System.Linq.Queryable/4.0.1": {
-      "sha512": "Yn/WfYe9RoRfmSLvUt2JerP0BTGGykCZkQPgojaxgzF2N0oPo+/AhB8TXOpdCcNlrG3VRtsamtK2uzsp3cqRVw==",
+      "sha512": "AhfXwIBAtDl6ZVKOKUVzLdzYenrPv0egE6OviXazonkn+V+bFPAKoBRgBpF7sIj+9b+Hh3gY9gWG5/sVsfi1nA==",
       "type": "package",
       "path": "system.linq.queryable/4.0.1",
       "files": [
+        "System.Linq.Queryable.4.0.1.nupkg.sha512",
+        "System.Linq.Queryable.nuspec",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/monoandroid10/_._",
@@ -9645,9 +9647,7 @@
         "ref/xamarinios10/_._",
         "ref/xamarinmac20/_._",
         "ref/xamarintvos10/_._",
-        "ref/xamarinwatchos10/_._",
-        "system.linq.queryable.4.0.1.nupkg.sha512",
-        "system.linq.queryable.nuspec"
+        "ref/xamarinwatchos10/_._"
       ]
     },
     "System.Net.Http/4.3.0": {
@@ -10889,10 +10889,12 @@
       ]
     },
     "System.Runtime.Serialization.Formatters/4.3.0": {
-      "sha512": "HRHqjCQBgzG4Bons4B5iDqGXz9G5/ZN8+/pXnm7WS1u1rlC3nEiIVoJZQ6uKzgeh5PLitVjt6R0dmxj9KUP61w==",
+      "sha512": "KT591AkTNFOTbhZlaeMVvfax3RqhH1EJlcwF50Wm7sfnBLuHiOeZRRKrr1ns3NESkM20KPZ5Ol/ueMq5vg4QoQ==",
       "type": "package",
       "path": "system.runtime.serialization.formatters/4.3.0",
       "files": [
+        "System.Runtime.Serialization.Formatters.4.3.0.nupkg.sha512",
+        "System.Runtime.Serialization.Formatters.nuspec",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -10910,9 +10912,7 @@
         "ref/xamarinios10/_._",
         "ref/xamarinmac20/_._",
         "ref/xamarintvos10/_._",
-        "ref/xamarinwatchos10/_._",
-        "system.runtime.serialization.formatters.4.3.0.nupkg.sha512",
-        "system.runtime.serialization.formatters.nuspec"
+        "ref/xamarinwatchos10/_._"
       ]
     },
     "System.Runtime.Serialization.Json/4.0.2": {
@@ -11462,7 +11462,7 @@
       ]
     },
     "System.Spatial/5.8.2": {
-      "sha512": "WcntxphYWXKVYGBstZhPqSnCJsK1bRZTjUm6O1dOW1fJLQ93yPAY5kas82sZfZymtLhBH9CXZLtZ9m0lsLR3wA==",
+      "sha512": "VznVQQjGfS9SdAgyvkXp4UB6HnY/Q5pVMLGGzfvx8RAFsFrcOoMv+X4qLCpzDitsTjeLyPpbOtZl/j0J5hue4A==",
       "type": "package",
       "path": "system.spatial/5.8.2",
       "files": [
@@ -12430,7 +12430,7 @@
       ]
     },
     "System.Xml.XPath/4.3.0": {
-      "sha512": "aIxQGKmkMFE9ntsqMZ5hzN631SemPSFLLMsOvbwsT8V2rTINN3V1DFG2WgXkCl1YHGyG/ZtlEn4cWmOvek06mw==",
+      "sha512": "i1U3ZFBz3/tISO+8OaDjUJVBnEMkjtorkCKZvTrGJ4kRmgajxZrzIPOSzSeEWwwqM+pM/QJeReHT9K+sUD+I0g==",
       "type": "package",
       "path": "system.xml.xpath/4.3.0",
       "files": [
@@ -12467,7 +12467,7 @@
       ]
     },
     "System.Xml.XPath.XDocument/4.3.0": {
-      "sha512": "xSBSrjTA6ReJNBlU5emqk07WM6KgTtkfVW0R7og+vhvihyG5LSiZEqczFVrFIx72SCBjfdwsLsQLVrTk9GOKWQ==",
+      "sha512": "gPhh62+3fd0MoXryZUUdcNlXq08+wIcle3VJ5GrjIZRjt+nu4Cu4/ZSjjBG52vgN61zXx0yZ95EP5uYUpTadoQ==",
       "type": "package",
       "path": "system.xml.xpath.xdocument/4.3.0",
       "files": [
@@ -12533,7 +12533,7 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\rkorn\\.nuget\\packages\\": {},
+    "C:\\Users\\kregius\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
@@ -12542,17 +12542,17 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "d:\\LogmeIn\\aspnettraining\\SampleMVC\\SampleMVC.csproj",
+      "projectUniqueName": "C:\\Users\\kregius\\source\\repos\\aspmvctraining\\SampleMVC\\SampleMVC.csproj",
       "projectName": "SampleMVC",
-      "projectPath": "d:\\LogmeIn\\aspnettraining\\SampleMVC\\SampleMVC.csproj",
-      "packagesPath": "C:\\Users\\rkorn\\.nuget\\packages\\",
-      "outputPath": "d:\\LogmeIn\\aspnettraining\\SampleMVC\\obj\\",
+      "projectPath": "C:\\Users\\kregius\\source\\repos\\aspmvctraining\\SampleMVC\\SampleMVC.csproj",
+      "packagesPath": "C:\\Users\\kregius\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\kregius\\source\\repos\\aspmvctraining\\SampleMVC\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\rkorn\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\kregius\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -12560,8 +12560,10 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Users\\rkorn\\.dotnet\\NuGetFallbackFolder": {},
-        "https://api.nuget.org/v3/index.json": {}
+        "C:\\Users\\kregius\\.dotnet\\NuGetFallbackFolder": {},
+        "https://api.nuget.org/v3/index.json": {},
+        "https://artifactory.intra.3amlabs.net/artifactory/api/nuget/logmein-nuget-gallery": {},
+        "https://webcore.dev.3amlabs.net/nuget": {}
       },
       "frameworks": {
         "netcoreapp2.0": {

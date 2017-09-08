@@ -4,10 +4,12 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
+using SampleMVC.Services;
 
 namespace SampleMVC
 {
@@ -23,20 +25,21 @@ namespace SampleMVC
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddTransient<IMyCustomService, MyCustomService>();
             services.AddMvc();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env)
+        public void Configure(IApplicationBuilder appBuilder, IHostingEnvironment env)
         {
             if (env.IsDevelopment())
             {
-                app.UseDeveloperExceptionPage();
+                appBuilder.UseDeveloperExceptionPage();
             }
 
-            //default: app.UseMvc();
+            //default: appBuilder.UseMvc();
             
-            app.UseMvc(routes =>
+            appBuilder.UseMvc(routes =>
             {
                 routes.MapRoute(
                     name: "default",
@@ -54,6 +57,34 @@ namespace SampleMVC
                 );
                 
             });
+
+            appBuilder.UseMyMiddleware();
+        }
+    }
+
+
+    public class MyMiddleware
+    {
+        private readonly RequestDelegate _next;
+
+        public MyMiddleware(RequestDelegate next)
+        {
+            _next = next;
+        }
+
+        public async Task Invoke(HttpContext context)
+        {
+            // Write to Response
+            await _next.Invoke(context);
+            // Clean up.
+        }
+    }
+
+    public static class MyMiddlewareExtensions
+    {
+        public static IApplicationBuilder UseMyMiddleware(this IApplicationBuilder appBuilder)
+        {
+            return appBuilder.UseMiddleware<MyMiddleware>();
         }
     }
 }
